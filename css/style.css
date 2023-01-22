@@ -1,0 +1,47 @@
+/** @format */
+body {
+  margin-top: 95px; }
+
+.navbar {
+  box-shadow: 2px 2px 4px #923232;
+  opacity: 0.9;
+  background: #fff; }
+  .navbar .nav-item {
+    font-size: 1.2rem;
+    padding-right: 1.2rem; }
+    .navbar .nav-item .nav-link {
+      font-weight: 600; }
+    .navbar .nav-item .nav-link:hover {
+      color: #923232; }
+
+#showcase {
+  position: relative;
+  background-image: linear-gradient(to right bottom, rgba(145, 113, 49, 0.52), rgba(146, 50, 50, 0.73)), url("../img/living-room.jpg");
+  background-position: center;
+  background-size: cover;
+  min-height: 700px; }
+
+#subscribe {
+  background-color: #312a2a; }
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #ddd; }
+
+#testimonial img {
+  margin-top: -50px; }
+#testimonial .card:hover {
+  background: #923232;
+  color: white; }
+  #testimonial .card:hover .fa-brands {
+    color: white; }
+
+@media only screen and (max-width: 768px) {
+  #showcase {
+    min-height: 500px; }
+    #showcase h1 {
+      font-size: 3rem; }
+
+  .mb-r {
+    margin-bottom: 1rem; } }

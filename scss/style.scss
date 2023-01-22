@@ -1,0 +1,77 @@
+/** @format */
+
+$primary: #923232;
+$secondry: #349e9d;
+$third: #917131;
+$fourth: #5d9e5d;
+$fifth: #482e9e;
+$primary-overlay: rgba($fifth, 0.8);
+
+body {
+  margin-top: 95px;
+}
+
+.navbar {
+  box-shadow: 2px 2px 4px $primary;
+  opacity: 0.9;
+  background: #fff;
+  .nav-item {
+    font-size: 1.2rem;
+    padding-right: 1.2rem;
+    .nav-link {
+      font-weight: 600;
+    }
+    .nav-link:hover {
+      color: $primary;
+    }
+  }
+}
+
+#showcase {
+  position: relative;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(#917131, 0.52),
+      rgba(#923232, 0.73)
+    ),
+    url('../img/living-room.jpg');
+
+  background-position: center;
+  background-size: cover;
+  min-height: 700px;
+}
+#subscribe {
+  background-color: #312a2a;
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+#testimonial {
+  img {
+    margin-top: -50px;
+  }
+
+  .card:hover {
+    background: $primary;
+    color: white;
+    .fa-brands {
+      color: white;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  #showcase {
+    min-height: 500px;
+    h1 {
+      font-size: 3rem;
+    }
+  }
+
+  .mb-r {
+    margin-bottom: 1rem;
+  }
+}
