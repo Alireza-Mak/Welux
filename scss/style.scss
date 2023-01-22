@@ -63,6 +63,16 @@ body {
     }
   }
 }
+
+
+@media only screen and (max-width: 992px) {
+  #contact {
+  img{
+    margin-top: 50px;
+    width: 50%;
+  }
+}
+}
 @media only screen and (max-width: 768px) {
   #showcase {
     min-height: 500px;
@@ -74,4 +84,5 @@ body {
   .mb-r {
     margin-bottom: 1rem;
   }
+
 }
