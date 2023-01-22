@@ -23,6 +23,9 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- /CSS/ -->
+    <!-- CSS -->
+    <script src="./js/script.js" defer></script>
+    <!-- /CSS/ -->
     <!-- FAVICON -->
     <link
       rel="apple-touch-icon"
@@ -543,37 +546,5 @@
       integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
       crossorigin="anonymous"
     ></script>
-
-    <script>
-      // Get the current year for the copyright
-      $('#year').text(new Date().getFullYear());
-
-      // Initial Spyscroll
-      $('body').scrollspy({ target: '#main-nav' });
-
-      // Smooth Scrolling
-      $('#main-nav a').on('click', function (e) {
-        // Check for a hash value
-        if (this.hash !== '') {
-          // Prevent default behavior
-          e.preventDefault();
-
-          // Store hash
-          const hash = this.hash;
-
-          // Animate smooth scroll
-          $('html, body').animate(
-            {
-              scrollTop: $(hash).offset().top,
-            },
-            900,
-            function () {
-              // Add hash to URL after scroll
-              window.location.hash = hash;
-            }
-          );
-        }
-      });
-    </script>
   </body>
 </html>
